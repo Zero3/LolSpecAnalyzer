@@ -10,8 +10,8 @@ You can add your own analyzer by subclassing AbstractAnalyzer in the analyzers p
 Included analyzers
 ------
 
-* StringAnalyzer: Heuristic for finding various kinds of strings
-* TimestampAnalyzer: Heuristic for finding timestamps
+* TimestampAnalyzer: Heuristic for finding timestamps. They are marked 'TIME' in the byte map.
+* StringAnalyzer: Heuristic for finding various kinds of strings. Characters are passed through to the byte map while length prefixes and null terminators are marked '"'. It also supports counting and printing all strings separately.
 
 Links
 ===============
