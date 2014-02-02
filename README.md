@@ -13,6 +13,26 @@ Included analyzers
 * TimestampAnalyzer: Heuristic for finding timestamps. They are marked 'TIME' in the byte map.
 * StringAnalyzer: Heuristic for finding various kinds of strings. Characters are passed through to the byte map while length prefixes and null terminators are marked '"'. It also supports counting and printing all strings separately.
 
+Example output
+------
+
+    162432: _____________________________lJ"F"______ECamp"__________________
+    162496: ___________________________TIME_______________________TIME______
+    162560: _______________________________EYoungLizard7.1.3"_________""""XE
+    162624: _______________________________!YoungLizard"____________________
+    162688: ________________________________YoungLizard7.1.3"_______________
+    162752: ________________________________Camp"___________________________
+    162816: ________________________________________________________________
+    162880: ________________________________________________________________
+    162944: ________________________________________________________________
+    163008: ________________________________________________________________
+    163072: ________________________________________________________________
+    163136: _______________________________________________""""JOKE""""Joke"
+    163200: """JOKE""""Joke""""TAUNT""""Taunt""""TAUNT""""Taunt""""RUN""""RU
+    163264: N_SPELL1""""RUN""""RUN_SPELL1_____""""JOKE""""Joke""""JOKE""""Jo
+    163328: ke""""TAUNT""""Taunt""""TAUNT""""Taunt""""RUN""""RUN_SPELL1""""R
+    163392: UN""""RUN_SPELL1________________________________________________
+
 Links
 ===============
 
